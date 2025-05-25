@@ -11,9 +11,9 @@ export const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid gap-10 md:grid-cols-3">
           <NavGroup title="Shop">
-            <NavLink href="/fragrance/terra">Terra</NavLink>
-            <NavLink href="/fragrance/igni">Igni</NavLink>
-            <NavLink href="/fragrance/aqua">Aqua</NavLink>
+            <NavLink href="/event/terra">Terra</NavLink>
+            <NavLink href="/event/igni">Igni</NavLink>
+            <NavLink href="/event/aqua">Aqua</NavLink>
           </NavGroup>
 
           <NavGroup title="About">
