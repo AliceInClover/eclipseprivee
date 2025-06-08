@@ -3,7 +3,6 @@ import {
   type ClientConfig,
   type Route,
 } from "@prismicio/client";
-import { enableAutoPreviews } from "@prismicio/next";
 import sm from "../slicemachine.config.json";
 
 /**
@@ -40,8 +39,6 @@ export const createClient = (config: ClientConfig = {}) => {
         : { next: { revalidate: 5 } },
     ...config,
   });
-
-  enableAutoPreviews({ client });
 
   return client;
 };
