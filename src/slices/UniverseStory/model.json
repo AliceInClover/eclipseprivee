@@ -1,0 +1,61 @@
+{
+  "id": "universe_story",
+  "type": "SharedSlice",
+  "name": "UniverseStory",
+  "description": "UniverseStory",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "story_content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Story Content",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,heading3,heading4,heading5,heading6,hyperlink,list-item,o-list-item"
+          }
+        },
+        "story_image": {
+          "type": "Image",
+          "config": {
+            "label": "Story Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "layout": {
+          "type": "Select",
+          "config": {
+            "label": "Layout",
+            "placeholder": "",
+            "options": ["image-left", "image-right"],
+            "default_value": "image-right"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

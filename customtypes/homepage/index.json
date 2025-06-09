@@ -28,6 +28,9 @@
             },
             "hero": {
               "type": "SharedSlice"
+            },
+            "universe_list": {
+              "type": "SharedSlice"
             }
           }
         }

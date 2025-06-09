@@ -1,0 +1,53 @@
+{
+  "id": "universe_gallery",
+  "type": "SharedSlice",
+  "name": "UniverseGallery",
+  "description": "UniverseGallery",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em"
+          }
+        }
+      },
+      "items": {
+        "gallery_image": {
+          "type": "Image",
+          "config": {
+            "label": "Gallery Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "image_caption": {
+          "type": "Text",
+          "config": {
+            "label": "Image Caption",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

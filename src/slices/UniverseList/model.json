@@ -1,0 +1,53 @@
+{
+  "id": "universe_list",
+  "type": "SharedSlice",
+  "name": "UniverseList",
+  "description": "UniverseList",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "eyebrow": {
+          "type": "Text",
+          "config": {
+            "label": "Eyebrow",
+            "placeholder": ""
+          }
+        },
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2"
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em"
+          }
+        }
+      },
+      "items": {
+        "universe": {
+          "type": "Link",
+          "config": {
+            "label": "Universe",
+            "select": "document",
+            "customtypes": ["universe"]
+          }
+        }
+      }
+    }
+  ]
+}

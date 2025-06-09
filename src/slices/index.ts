@@ -8,5 +8,10 @@ export const components = {
   event_list: dynamic(() => import("./EventList")),
   hero: dynamic(() => import("./Hero")),
   scroll_text: dynamic(() => import("./ScrollText")),
+  universe_events: dynamic(() => import("./UniverseEvents")),
+  universe_gallery: dynamic(() => import("./UniverseGallery")),
+  universe_hero: dynamic(() => import("./UniverseHero")),
+  universe_list: dynamic(() => import("./UniverseList")),
+  universe_story: dynamic(() => import("./UniverseStory")),
   video: dynamic(() => import("./Video")),
 };

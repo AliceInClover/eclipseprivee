@@ -1,0 +1,146 @@
+{
+  "format": "page",
+  "id": "universe",
+  "label": "Universe",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "UID"
+        }
+      },
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Title",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "heading1"
+        }
+      },
+      "subtitle": {
+        "type": "Text",
+        "config": {
+          "label": "Subtitle",
+          "placeholder": "Sous-titre de l'univers"
+        }
+      },
+      "hero_image": {
+        "type": "Image",
+        "config": {
+          "label": "Hero Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,strong,em,heading3,heading4,heading5,heading6,hyperlink,list-item,o-list-item"
+        }
+      },
+      "universe_type": {
+        "type": "Select",
+        "config": {
+          "label": "Universe Type",
+          "placeholder": "",
+          "options": ["mystique", "elegance", "aventure", "serenite"],
+          "default_value": "mystique"
+        }
+      },
+      "color_palette": {
+        "type": "Group",
+        "config": {
+          "label": "Color Palette",
+          "repeat": true,
+          "fields": {
+            "color_name": {
+              "type": "Text",
+              "config": {
+                "label": "Color Name",
+                "placeholder": "Nom de la couleur"
+              }
+            },
+            "color_hex": {
+              "type": "Text",
+              "config": {
+                "label": "Color Hex",
+                "placeholder": "#000000"
+              }
+            }
+          }
+        }
+      },
+      "featured_events": {
+        "type": "Group",
+        "config": {
+          "label": "Featured Events",
+          "repeat": true,
+          "fields": {
+            "event": {
+              "type": "Link",
+              "config": {
+                "label": "Event",
+                "select": "document",
+                "customtypes": ["event"]
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "universe_hero": {
+              "type": "SharedSlice"
+            },
+            "universe_story": {
+              "type": "SharedSlice"
+            },
+            "universe_gallery": {
+              "type": "SharedSlice"
+            },
+            "universe_events": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO & Metadata": {
+      "meta_title": {
+        "config": {
+          "label": "Meta Title",
+          "placeholder": "A title of the page used for social media and search engines"
+        },
+        "type": "Text"
+      },
+      "meta_description": {
+        "config": {
+          "label": "Meta Description",
+          "placeholder": "A brief summary of the page"
+        },
+        "type": "Text"
+      },
+      "meta_image": {
+        "config": {
+          "constraint": {
+            "height": 1260,
+            "width": 2400
+          },
+          "label": "Meta Image",
+          "thumbnails": []
+        },
+        "type": "Image"
+      }
+    }
+  }
+}
